@@ -7,7 +7,7 @@ html {
 body {
     margin:0;
     height: 5000px;
-    background: linear-gradient(180deg, rgba(108,18,168,1) 10%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 91%);
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(34,135,255,1) 100%);
     font-family: 'Roboto', sans-serif;
 }
 
