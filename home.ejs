@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 500);
+        }
+
+        var images = [], x = -1;
+        images[0] = "https://cdn.discordapp.com/attachments/913823906924728460/914120261694013530/image1.png";
+        images[1] = "https://cdn.discordapp.com/attachments/913823906924728460/914120261882765312/image2.png";
+        images[2] = "https://cdn.discordapp.com/attachments/913823906924728460/914120262100873246/image3.png";
+        images[3] = "https://cdn.discordapp.com/attachments/913823906924728460/914120261509459999/image0.png"
+    </script>
+    <script type="text/javascript">
+        var countDownDate = new Date("Jan 5, 2022 19:0:0").getTime();
+
+        var count = setInterval(function(){
+            var today = new Date().getTime();
+            var timeLeft = countDownDate - today;
+
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementsByClassName("timer")[0].innerHTML = hours + "h " + minutes + "m " + seconds + "s " + "left!";
+
+            if (timeLeft < 0) {
+                clearInterval(count);
+                document.getElementsByClassName("timer")[0].innerHTML = "nft poopers are are now out!";
+            }
+        } , 1000);
+    </script>
+</head>
+<body onload="startTimer();">
+    <nav id = "nav">
+        <ul>
+            <li><a href="#top">Countdown</a></li>
+            <li><a href="#news">button 2</a></li>
+            <li><a href="#contact">button 3</a></li>
+            <li><a href="#about">button 4</a></li>
+            <li><img src="https://cdn.discordapp.com/attachments/913823906924728460/914929595524988928/image_2021-11-29_192214.png" width="130" height="60"></li>
+          </ul>
+    </nav>
+    <h1 id = "content-title" class = "timer" id = "top"></h1>
+    <div class="main" id = "main">
+        <img id="img" src = "https://cdn.discordapp.com/attachments/913823906924728460/914120261509459999/image0.png" width="512" height="512">
+        <h5 id = "content">SolPoopers exclusive NFT community is comprised of 1,111 unique Poops that are generated using Hashlips. Over 150+ traits - each one of them is a unique piece of art randomly assembled by code and will reside on the safe landscape of Solana Blockchain</h5>
+    </div>
+    <hr>
+    <div class="main-cause-main">
+    <h1 id = "content-title-cause">Our cause</h1>
+    <div class="main-cause" id = "main">
+        <h5 id = "content-noimg">Our ambition is to restore Planet earth as it was 1000s of years ago before human intervention with plastic and waste pollution .So currently we have partnered up with the charity called WasteAid - International Waste management we have chosen this charity for our funds to pool into is that at WasteAid, they work with communities and policy makers in lower and middle income countries to implement waste management and recycling programmes.
+            1 in 3 people worldwide are forced to dump or burn their waste, causing disease, polluting the oceans, and contributing to the global climate crisis.  Their charity help work improves livelihoods, promotes circular economy innovation and contributes to a cleaner and healthier future for all
+            </h5>
+    </div>
+    </div>
+    <hr>
+    <h1 id = "content-title">Who are we?</h1>
+    <div class="main" id = "main">
+        <h5 id = "content-noimg">SOLpoopers exclusive NFT community is comprised of 3,333 unique 💩 that are hand drawn with pure love and passion. With over 150+ traits, each one of them is a unique piece of art randomly assembled by code and will reside on the safe landscape of Solana Blockchain.</h5>
+    </div>
+    
+    <hr>
+    <h1 id = "content-title">Roadmap</h1>
+    <div class="main" id = "main">
+        <img src = "https://cdn.discordapp.com/attachments/906564132696911942/916053735736737793/PooMap.png" id = "roadmap">
+    </div>
+    <hr>
+    <!--blank for now-->
+    <h1 id = "content-title"></h1>
+    <div class="main-bbg" id = "main">
+        <h5 id = "content-noimg"></h5>
+    </div>
+    <hr>
+    <div class = "main-main">
+    <h1 id = "content-title">FAQ</h1>
+    <div class="faq">
+        <button class="accordion">How shall we mint our own Poop?</button>
+        <div class="panel">
+          <p>To mint your own Poop, you can do so by visting (WEBSITE LAUNCHING SOON)</p>
+
+            <p>Topping up your wallet -</p>
+            <p>If you are new to SOLANA minting, we recommend you using a wallet such as https://sollet.io/ for mobile compatibility OR https://phantom.app/ for chrome compatibility</p>
+            
+            <p>To ensure safety for the community, please be mindful of scammers who may try to impersonate as our staff members. We always encourage our community to check our server and if they are in doubt of anything, always contact a staff member immediately</p>
+        </div>
+        <button class="accordion">How much is it to mint a Poop?</button>
+        <div class="panel">
+          <p>As per team discussion, we have decided to set a mint price of 0.65 SOL
+
+            The price is determined by a number of factors, including:</p>
+            <li>
+                <p>- Rewards for holders</p>
+                <p>- Donations to global waste crisis</p>
+                <p>- Community giveaways</p>
+                <p>- Crypto Defi Game (More to be announced at Phase 5 of Roadmap)</p>
+            </li>
+
+            <p>.. and many more!</p>
+        </div>
+        <button class="accordion">How many Poop will be available?</button>
+        <div class="panel">
+          <p>Using a github source (Hashlips), we have generated 2222 images which are available to mint directly from our site (COMING SOON)</p>
+        </div>
+        <button class="accordion">How is royalties distributed?</button>
+        <div class="panel">
+          <p>Our artists have put their last inches of talent into making our Poop come to life, therefore a perctenage of the transaction per sale (Royalties) will be distributed towards our artist.</p>
+
+            <p>Royalties will also be distributed for listing fees and to support for any other giveaways being held</p>
+        </div>
+        <button class="accordion">When is SolPooper NFT launching?</button>
+        <div class="panel">
+          <p>The whole team is working very hard to ensure that we have a smoothest of launches. For that reason the actual date for release is intented for 5th of December</p>
+          <p>24 hours before the minting phase, everyone will be announced on the exact time for minting</p>
+          <p>Regular announcements will be made prior to the minting time ensuring everyone has an equal chance to grab their own Poop!</p>
+          <p>Ensure notifications are on at all times, and ensure you are always following the link ONLY sent in the discord channel</p>
+        </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+    </div>
+    <!--<div class="footer">
+        <a href="" class="footer-link"><img src = "https://seeklogo.com/images/D/discord-color-logo-E5E6DFEF80-seeklogo.com.png"></a>
+    </div>-->
+
+
+</body>
