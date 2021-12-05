@@ -6,7 +6,7 @@ html {
   
 body {
     margin:0;
-    height: 5000px;
+    height: 3800px;
     background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(34,135,255,1) 100%);
     font-family: 'Roboto', sans-serif;
 }
@@ -86,8 +86,8 @@ user-select: none; /* Standard */
   opacity: 0.9; 
   line-height: 3; 
   font-weight: 700;
-  font-size: 16px;
-  margin-right: 20px;
+  font-size: 24px;
+  margin-right: 100px;
 }
 
 #content-noimg {
@@ -100,16 +100,39 @@ user-select: none; /* Standard */
   margin-left: 150px;
 }
 
+#content-noimg-waw {
+  opacity: 0.9; 
+  line-height: 3; 
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
 #content-title {
- 
+  font-size: 50px;
   text-align: center;
   margin-top: 100px;
 }
 
-#content-title-cause {
-   
+#content-title-main {
+ 
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 10px;
+}
+#content-title-timer {
+ 
+  text-align: center;
+  
+}
+
+#content-title-cause {
+   font-size: 50px;
+  position: absolute;
+  
+  left: 16px;
 }
 
 .main-main {
@@ -117,8 +140,13 @@ user-select: none; /* Standard */
   max-height: fit-content;
 }
 
+.timer {
+  font-size: 50px;
+}
+
 .main-cause-main {
-  max-height: fit-content;
+  
+  height: fit-content;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.discordapp.com/attachments/913823906924728460/916828734034677770/e.png');
 
   /*blue background image*/
