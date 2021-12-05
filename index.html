@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script type = "text/javascript">
         function displayNextImage() {
             x = (x === images.length - 1) ? 0 : x + 1;
@@ -39,7 +39,7 @@
 
             if (timeLeft < 0) {
                 clearInterval(count);
-                document.getElementsByClassName("timer")[0].innerHTML = "nft poopers are are now out!";
+                document.getElementsByClassName("timer")[0].innerHTML = "mint now";
             }
         } , 1000);
     </script>
@@ -47,19 +47,21 @@
 <body onload="startTimer();">
     <nav id = "nav">
         <ul>
-            <li><a href="#top">Countdown</a></li>
-            <li><a href="#news">button 2</a></li>
-            <li><a href="#contact">button 3</a></li>
-            <li><a href="#about">button 4</a></li>
+            <li><a href="#cause">Our cause</a></li>
+            <li><a href="#waw">Who are we</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><img src="https://cdn.discordapp.com/attachments/913823906924728460/914929595524988928/image_2021-11-29_192214.png" width="130" height="60"></li>
           </ul>
     </nav>
-    <h1 id = "content-title" class = "timer" id = "top"></h1>
+    <h1 id = "content-title-main">Minting countdown</h1>
+    <h1 id = "content-title-timer" class = "timer" id = "top"></h1>
     <div class="main" id = "main">
-        <img id="img" src = "https://cdn.discordapp.com/attachments/913823906924728460/914120261509459999/image0.png" width="512" height="512">
+        <img id="img" src = "https://cdn.discordapp.com/attachments/913823906924728460/914120261509459999/image0.png" width="600" height="600">
         <h5 id = "content">SolPoopers exclusive NFT community is comprised of 1,111 unique Poops that are generated using Hashlips. Over 150+ traits - each one of them is a unique piece of art randomly assembled by code and will reside on the safe landscape of Solana Blockchain</h5>
     </div>
-    <hr>
+    
+    <s id = "cause"></s>
     <div class="main-cause-main">
     <h1 id = "content-title-cause">Our cause</h1>
     <div class="main-cause" id = "main">
@@ -68,27 +70,27 @@
             </h5>
     </div>
     </div>
-    <hr>
+    <s id = "waw"></s>
     <h1 id = "content-title">Who are we?</h1>
     <div class="main" id = "main">
-        <h5 id = "content-noimg">SOLpoopers exclusive NFT community is comprised of 3,333 unique 💩 that are hand drawn with pure love and passion. With over 150+ traits, each one of them is a unique piece of art randomly assembled by code and will reside on the safe landscape of Solana Blockchain.</h5>
+        <h5 id = "content-noimg-waw">SolPoopers exclusive NFT community is comprised of 1,111 unique Poops that are generated using Hashlips. Over 150+ traits - each one of them is a unique piece of art randomly assembled by code and will reside on the safe landscape of Solana Blockchain.</h5>
     </div>
     
-    <hr>
-    <h1 id = "content-title">Roadmap</h1>
+    
+    
     <div class="main" id = "main">
         <img src = "https://cdn.discordapp.com/attachments/906564132696911942/916053735736737793/PooMap.png" id = "roadmap">
     </div>
-    <hr>
+    
     <!--blank for now-->
     <h1 id = "content-title"></h1>
     <div class="main-bbg" id = "main">
         <h5 id = "content-noimg"></h5>
     </div>
-    <hr>
+    <s id = "faq"></s>
     <div class = "main-main">
     <h1 id = "content-title">FAQ</h1>
-    <div class="faq">
+    <div class="faq" >
         <button class="accordion">How shall we mint our own Poop?</button>
         <div class="panel">
           <p>To mint your own Poop, you can do so by visting (WEBSITE LAUNCHING SOON)</p>
